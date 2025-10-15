@@ -21,13 +21,16 @@ export default function GeometryExplorer() {
       75,
       mountRef.current.clientWidth / mountRef.current.clientHeight,
       0.1,
-      1000
+      1000,
     );
     camera.position.z = 5;
 
     // Renderizador
     const renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setSize(mountRef.current.clientWidth, mountRef.current.clientHeight);
+    renderer.setSize(
+      mountRef.current.clientWidth,
+      mountRef.current.clientHeight,
+    );
     mountRef.current.innerHTML = ""; // Limpia el contenedor
     mountRef.current.appendChild(renderer.domElement);
 
@@ -69,7 +72,7 @@ export default function GeometryExplorer() {
   const changeColor = () => {
     if (cube) {
       (cube.material as THREE.MeshStandardMaterial).color.set(
-        Math.random() * 0xffffff
+        Math.random() * 0xffffff,
       );
     }
   };

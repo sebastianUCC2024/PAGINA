@@ -10,8 +10,8 @@ export default function LayoutsView() {
             Container básico
           </h2>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
-            Usa <code>container mx-auto px-4</code> para crear secciones centradas
-            con padding lateral responsivo.
+            Usa <code>container mx-auto px-4</code> para crear secciones
+            centradas con padding lateral responsivo.
           </p>
         </div>
       </section>
@@ -23,9 +23,10 @@ export default function LayoutsView() {
             MaxWidth para textos
           </h3>
           <p className="mt-2 text-slate-700 dark:text-slate-200 leading-relaxed">
-            Controla el ancho máximo del bloque de texto con <code>max-w-prose</code> 
-            o <code>max-w-3xl</code> y centra con <code>mx-auto</code>. Esto mejora la 
-            legibilidad en pantallas grandes.
+            Controla el ancho máximo del bloque de texto con{" "}
+            <code>max-w-prose</code>o <code>max-w-3xl</code> y centra con{" "}
+            <code>mx-auto</code>. Esto mejora la legibilidad en pantallas
+            grandes.
           </p>
         </div>
       </section>

@@ -7,8 +7,6 @@ export default function ContadorClics() {
           <ClickCounter />
         </div>
       </section>
-
-
     </div>
   );
 }

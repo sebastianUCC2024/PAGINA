@@ -8,7 +8,9 @@ describe("PasswordValidator Component", () => {
 
     expect(screen.getByText(/Al menos 8 caracteres/)).toHaveTextContent("❌");
     expect(screen.getByText(/Contiene un número/)).toHaveTextContent("❌");
-    expect(screen.getByText(/Contiene una letra mayúscula/)).toHaveTextContent("❌");
+    expect(screen.getByText(/Contiene una letra mayúscula/)).toHaveTextContent(
+      "❌",
+    );
   });
 
   test("valida correctamente cuando se escribe una contraseña válida", () => {
@@ -19,7 +21,9 @@ describe("PasswordValidator Component", () => {
 
     expect(screen.getByText(/Al menos 8 caracteres/)).toHaveTextContent("✔️");
     expect(screen.getByText(/Contiene un número/)).toHaveTextContent("✔️");
-    expect(screen.getByText(/Contiene una letra mayúscula/)).toHaveTextContent("✔️");
+    expect(screen.getByText(/Contiene una letra mayúscula/)).toHaveTextContent(
+      "✔️",
+    );
   });
 
   test("detecta cuando solo algunas reglas se cumplen", () => {
@@ -30,6 +34,8 @@ describe("PasswordValidator Component", () => {
 
     expect(screen.getByText(/Al menos 8 caracteres/)).toHaveTextContent("✔️");
     expect(screen.getByText(/Contiene un número/)).toHaveTextContent("✔️");
-    expect(screen.getByText(/Contiene una letra mayúscula/)).toHaveTextContent("❌");
+    expect(screen.getByText(/Contiene una letra mayúscula/)).toHaveTextContent(
+      "❌",
+    );
   });
 });

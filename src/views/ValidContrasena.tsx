@@ -8,8 +8,6 @@ export default function ValidContrasena() {
           <PasswordValidator />
         </div>
       </section>
-
-
     </div>
   );
 }

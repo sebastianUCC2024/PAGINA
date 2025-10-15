@@ -13,7 +13,11 @@ export default function UnitConverter() {
   return (
     <div className="h-full w-full p-6">
       <h3 className="text-2xl font-bold mb-4">Conversor de Unidades</h3>
-    <img src="/formula_celsius.jpg" alt="Fórmula de conversión" className="mb-4 w-48" />
+      <img
+        src="/formula_celsius.jpg"
+        alt="Fórmula de conversión"
+        className="mb-4 w-48"
+      />
 
       <div className="flex flex-col gap-4 max-w-sm">
         <label className="flex flex-col">

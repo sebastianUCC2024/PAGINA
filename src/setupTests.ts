@@ -14,7 +14,7 @@ if (typeof global.TextDecoder === "undefined") {
 
 Object.defineProperty(window, "matchMedia", {
   writable: true,
-  value: (query: string) => ({ 
+  value: (query: string) => ({
     matches: false,
     media: query,
     onchange: null,

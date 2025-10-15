@@ -14,7 +14,7 @@ export default function SpeechDemoView() {
     function populateVoices() {
       const allVoices = synth.getVoices();
       const preferred = allVoices.filter((v) =>
-        /en-|English/i.test(`${v.lang} ${v.name}`)
+        /en-|English/i.test(`${v.lang} ${v.name}`),
       );
       const source = preferred.length ? preferred : allVoices;
       setVoices(source);

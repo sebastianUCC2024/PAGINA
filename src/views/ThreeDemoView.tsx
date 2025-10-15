@@ -24,7 +24,7 @@ export default function ThreeDemoView() {
       50,
       stage.clientWidth / stage.clientHeight,
       0.1,
-      100
+      100,
     );
     camera.position.set(2.5, 2.0, 3.0);
     camera.lookAt(0, 0, 0);
@@ -76,7 +76,9 @@ export default function ThreeDemoView() {
 
   const setColor = (hex: number) => {
     cubeRef.current?.material &&
-      (cubeRef.current.material as THREE.MeshStandardMaterial).color.setHex(hex);
+      (cubeRef.current.material as THREE.MeshStandardMaterial).color.setHex(
+        hex,
+      );
   };
 
   const setRandomColor = () => {

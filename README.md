@@ -6,15 +6,14 @@ Este proyecto es un aplicativo desarrollado en **React con Vite** para aprender 
 
 El aplicativo incluye:
 
-* **Sidebar con acordeón** para navegación.
-* **Componentes de ejemplo** para verificar dependencias.
-* **Ejercicios con pruebas unitarias**:
-
-  * Tablas de Multiplicar (`TablasMul.tsx`)
-  * Conversor de Unidades (`UnitConverter.tsx`)
-  * Validador de Contraseñas (`PasswordValidator.tsx`)
-  * Contador de Clics (`ClickCounter.tsx`)
-  * Lista de Tareas (`TodoList.tsx`)
+- **Sidebar con acordeón** para navegación.
+- **Componentes de ejemplo** para verificar dependencias.
+- **Ejercicios con pruebas unitarias**:
+  - Tablas de Multiplicar (`TablasMul.tsx`)
+  - Conversor de Unidades (`UnitConverter.tsx`)
+  - Validador de Contraseñas (`PasswordValidator.tsx`)
+  - Contador de Clics (`ClickCounter.tsx`)
+  - Lista de Tareas (`TodoList.tsx`)
 
 ---
 
@@ -37,37 +36,37 @@ npm install
 
 ## Scripts disponibles
 
-* **Iniciar servidor de desarrollo**
+- **Iniciar servidor de desarrollo**
 
 ```bash
 npm run dev
 ```
 
-* **Compilar para producción**
+- **Compilar para producción**
 
 ```bash
 npm run build
 ```
 
-* **Previsualizar build de producción**
+- **Previsualizar build de producción**
 
 ```bash
 npm run preview
 ```
 
-* **Ejecutar pruebas unitarias**
+- **Ejecutar pruebas unitarias**
 
 ```bash
 npm test
 ```
 
-* **Revisar tipos TypeScript**
+- **Revisar tipos TypeScript**
 
 ```bash
 npm run type-check
 ```
 
-* **Linting y formateo**
+- **Linting y formateo**
 
 ```bash
 npm run lint
@@ -103,11 +102,11 @@ src/
 
 Las pruebas unitarias están desarrolladas con **Jest** y **React Testing Library**.
 
-* Validan la correcta interacción de los componentes.
-* Comprobar que `localStorage` persista valores en `ClickCounter`.
-* Verificar la lógica de validación en `PasswordValidator`.
-* Confirmar el funcionamiento de agregar y eliminar tareas en `TodoList`.
-* Aseguran que los componentes principales rendericen correctamente.
+- Validan la correcta interacción de los componentes.
+- Comprobar que `localStorage` persista valores en `ClickCounter`.
+- Verificar la lógica de validación en `PasswordValidator`.
+- Confirmar el funcionamiento de agregar y eliminar tareas en `TodoList`.
+- Aseguran que los componentes principales rendericen correctamente.
 
 Ejecutar todas las pruebas:
 
@@ -119,18 +118,18 @@ npm test
 
 ## Consideraciones
 
-* Se recomienda **investigar, analizar e interpretar cada ejercicio** antes de ejecutar pruebas unitarias.
-* Las pruebas serán evaluadas de manera **individual en clase**, considerando la explicación del proceso y la solución aplicada.
+- Se recomienda **investigar, analizar e interpretar cada ejercicio** antes de ejecutar pruebas unitarias.
+- Las pruebas serán evaluadas de manera **individual en clase**, considerando la explicación del proceso y la solución aplicada.
 
 ---
 
 ## Dependencias principales
 
-* `react`, `react-dom`, `react-router-dom`
-* `three`
-* `tailwindcss`
-* `framer-motion`
-* `jest`, `@testing-library/react`, `@testing-library/jest-dom`, `@types/jest`
+- `react`, `react-dom`, `react-router-dom`
+- `three`
+- `tailwindcss`
+- `framer-motion`
+- `jest`, `@testing-library/react`, `@testing-library/jest-dom`, `@types/jest`
 
 ---
 
@@ -139,4 +138,3 @@ npm test
 **Gustavo Sánchez Rodríguez**
 Asignatura: Ingeniería Web
 Clase UCC
-
