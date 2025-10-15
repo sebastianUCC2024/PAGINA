@@ -22,7 +22,7 @@ describe("ClickCounter Component", () => {
   });
 
   test("persiste el valor en localStorage", () => {
-    localStorage.setItem("click-counter", "4");
+    localStorage.setItem("click-counter", "5");
     render(<ClickCounter />);
 
     expect(screen.getByText(/Has hecho clic:/)).toHaveTextContent(
