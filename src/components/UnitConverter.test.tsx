@@ -9,9 +9,7 @@ describe("UnitConverter Component", () => {
     expect(screen.getByText(/Conversor de Unidades/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Celsius/i)).toBeInTheDocument();
     expect(screen.getByLabelText(/Fahrenheit/i)).toBeInTheDocument();
-    expect(
-      screen.getByRole("button", { name: /Convertir/i }),
-    ).toBeInTheDocument();
+    expect(screen.getByRole("button", { name: /Convertir/i })).toBeInTheDocument();
   });
 
   test("convierte Celsius a Fahrenheit correctamente", () => {
@@ -19,9 +17,7 @@ describe("UnitConverter Component", () => {
 
     const inputCelsius = screen.getByLabelText(/Celsius/i) as HTMLInputElement;
     const button = screen.getByRole("button", { name: /Convertir/i });
-    const inputFahrenheit = screen.getByLabelText(
-      /Fahrenheit/i,
-    ) as HTMLInputElement;
+    const inputFahrenheit = screen.getByLabelText(/Fahrenheit/i) as HTMLInputElement;
 
     // Escribir en el input de Celsius
     fireEvent.change(inputCelsius, { target: { value: "40" } });

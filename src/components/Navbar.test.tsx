@@ -1,5 +1,5 @@
 // src/components/Navbar.test.tsx
-import { render, screen } from "@testing-library/react";
+import { render, screen} from "@testing-library/react";
 import Navbar from "./Navbar";
 
 // Limpia los mocks antes de cada prueba
@@ -19,3 +19,4 @@ describe("Navbar - Renderizado", () => {
     expect(screen.getByRole("button", { name: /Tema/i })).toBeInTheDocument();
   });
 });
+

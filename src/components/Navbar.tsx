@@ -19,9 +19,7 @@ const Navbar: React.FC = () => {
     const next = root.classList.toggle("dark") ? "dark" : "light";
     localStorage.setItem("theme", next);
     // Notifica a la app para que vistas activas reaccionen en vivo
-    document.dispatchEvent(
-      new CustomEvent("theme:changed", { detail: { theme: next } }),
-    );
+    document.dispatchEvent(new CustomEvent("theme:changed", { detail: { theme: next } }));
   };
 
   return (
